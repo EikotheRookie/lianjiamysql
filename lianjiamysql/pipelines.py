@@ -48,7 +48,7 @@ class LianjiamysqlPipeline(object):
         else:
             item['shangquan'] = 'NULL'
 
-        sql = 'insert into tmp_lianjia_ershoufang values("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s")' %(item['zhandian'],item['date'],item['id'],item['quyu'],item['shangquan'],item['xiaoqu'],item['priceTotal'],item['pricePerSqm'],item['huxing'],float(item['sqmTotal']),float(item['sqmInner']),item['chaoxiang'],item['zhuangxiu'],item['elevator'],item['floor'],item['hxStructure'],item['leixing'],item['jzStructure'],item['elevatorRatio'],item['nianxian'],item['onlineDate'],item['lastTradeDate'],item['houseYear'],item['diya'],item['quanshu'],item['yongtu'],item['chanquan'])
+        sql = 'insert into lianjia_ershoufang values("%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s")' %(item['zhandian'],item['date'],item['id'],item['quyu'],item['shangquan'],item['xiaoqu'],item['priceTotal'],item['pricePerSqm'],item['huxing'],float(item['sqmTotal']),float(item['sqmInner']),item['chaoxiang'],item['zhuangxiu'],item['elevator'],item['floor'],item['hxStructure'],item['leixing'],item['jzStructure'],item['elevatorRatio'],item['nianxian'],item['onlineDate'],item['lastTradeDate'],item['houseYear'],item['diya'],item['quanshu'],item['yongtu'],item['chanquan'])
         print(sql)
         self.cursor.execute(sql)
         return item
