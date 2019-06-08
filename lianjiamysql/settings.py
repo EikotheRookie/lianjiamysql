@@ -24,7 +24,7 @@ LOG_LEVEL = "ERROR"
 MYSQL_HOST = '127.0.0.1'
 MYSQL_DBNAME = 'scrapy'         #数据库名字，请修改
 MYSQL_USER = 'scrapy'             #数据库账号，请修改
-MYSQL_PASSWD = 'scrapy'         #数据库密码，请修改
+MYSQL_PASSWD = 'scrapy@Zero0512'         #数据库密码，请修改
 MYSQL_PORT = 3306               #数据库端口，在dbhelper中使用
 
 
