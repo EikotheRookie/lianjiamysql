@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
+
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from lianjiamysql.items import FirstItemLoader, LianjiamysqlItem
 import re
-from scrapy.conf import settings
+from scrapy.utils.project import get_project_settings
+settings = get_project_settings()
 import time
 
 class LianjiaSpider(CrawlSpider):
